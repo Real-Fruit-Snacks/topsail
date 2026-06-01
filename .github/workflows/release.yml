@@ -32,7 +32,7 @@ jobs:
         uses: anchore/sbom-action/download-syft@v0.24.0
 
       - name: Install cosign
-        uses: sigstore/cosign-installer@v4.1.1
+        uses: sigstore/cosign-installer@v4.1.2
         with:
           # cosign v3 dropped the legacy --output-certificate /
           # --output-signature flags; .goreleaser.yaml writes the
